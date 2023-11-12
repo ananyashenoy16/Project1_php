@@ -11,7 +11,8 @@ if(!isset($_SESSION['username'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student's Menu</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         .btn{
             border:3px;
