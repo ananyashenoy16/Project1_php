@@ -1,6 +1,8 @@
 <?php
 $login=0;
 $invalid=0;
+session_start();
+$_SESSION['login_status']=false;
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     include 'connect.php';
@@ -19,26 +21,35 @@ $num=mysqli_num_rows($result);
         while($row=mysqli_fetch_assoc($result)){
             if(password_verify($password,$row['password'])){
               $login=1;
-             // echo "Login successfull";
-                 echo "<script>
+              echo "Login Success";
+              $username=$row['username'];
+              $user_type=$row['user_type'];
         
-                   window.onload=function(){
-                    alert('Login successful!!');}
-                    </script>";
-                    session_start();
-                    $_SESSION['username']=$username;
-                    header('location:home.php');
+              if($user_type=="student"){
+                  $_SESSION['login_status']=true;
+                  $_SESSION["username"]=$username;
+                  $_SESSION["user_type"]=$user_type;
+          
+                  header("location:student.php");
+              }
+              else if($user_type=="teacher"){
+                  $_SESSION['login_status']=true;
+                  $_SESSION["username"]=$username;
+                  $_SESSION["user_type"]=$user_type;
+          
+                  header("location:teacher.php");
+              }
     }
     else
     {
-       //echo "invalid credentials";
        $invalid=1;
+    //    header('location:index.html');
        echo "<script>
         
                    window.onload=function(){
                      alert('password doesnt match');}
                     </script>";
-                    // header('location:index.html');
+                   
     }
 }
 }

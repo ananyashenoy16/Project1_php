@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header('location:login.html');
+    header('location:index.html');
 }
 
  ?>  
@@ -22,7 +22,7 @@ if(!isset($_SESSION['username'])){
 </head>
 <body>
     <h1>
-        Welcomeeeeee dear 
+        Welcomeeeeee dear Student
         <?php echo $_SESSION['username'];
         ?>
         <button class="btn">
