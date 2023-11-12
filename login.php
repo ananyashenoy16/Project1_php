@@ -31,15 +31,15 @@ $num=mysqli_num_rows($result);
                   $_SESSION["user_type"]=$user_type;
           
                   header("location:student.php");
-              }
+               }
               else if($user_type=="teacher"){
                   $_SESSION['login_status']=true;
                   $_SESSION["username"]=$username;
                   $_SESSION["user_type"]=$user_type;
           
                   header("location:teacher.php");
-              }
-    }
+                }
+           }
     else
     {
        $invalid=1;
@@ -51,7 +51,7 @@ $num=mysqli_num_rows($result);
                     </script>";
                    
     }
-}
+ }
 }
     else
     {
