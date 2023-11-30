@@ -59,7 +59,7 @@ header {
     font-family: 'Poppins';
 
     width: 100%;
-    background-color: #fff;
+    background-color: #fffff;
     background-attachment: cover;
 
 }
@@ -72,7 +72,9 @@ footer
      height: max-content;
     width: 100%;
     background-color: #000000;
-    background-attachment: cover;}
+    background-attachment: cover;
+}
+
 
 .navbar {
     top: 0;
