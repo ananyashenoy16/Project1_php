@@ -45,10 +45,10 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="nav-link">
                     <ul>
-                    <li class="cc" ><a href="index.html">HOME</a></li>
-                    <li class="cc" ><a href="menu.php">MENU</a></li>
-                    <li class="cc" ><a href="about.html">ABOUT</a></li>
-                    <li class="cc" ><a href="tact.html">CONTACT</a></li>
+                    <li class="cc" ><a href="teacher.php">HOME</a></li>
+                    <li class="cc" ><a href="menu2.php">MENU</a></li>
+                    <li class="cc" ><a href="about1.html">ABOUT</a></li>
+                    <li class="cc" ><a href="ctact.html">CONTACT</a></li>
                     <a href="logout.php"> <button>LOG OUT</button></a>
                     </ul>
                 </div>
@@ -61,12 +61,12 @@ if(!isset($_SESSION['username'])){
         </header>
       
         <section class="price_section layout_padding">
-          <center> <h1>Today's Menu</h1></center>
+          <center> <h1>Teacher's Menu</h1></center>
         
             <div class="container"><section class="main_menu">
-                <button class="menu_btn" onclick="filterSelection('sushi')">Vegetarian</button>
-                <button class="menu_btn" onclick="filterSelection('salade')">Salad</button>
-                <button class="menu_btn" onclick="filterSelection('all')">Non-vegetarian</button>
+                <button class="menu_btn" onclick="filterSelection('sushi')">Breakfast</button>
+                <button class="menu_btn" onclick="filterSelection('salade')">Meals</button>
+                <button class="menu_btn" onclick="filterSelection('all')">Snacks</button>
             </section>
 
             <div class="heading_container">
@@ -84,7 +84,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="img-box">
                         <img style="border-radius: 30%;"
-                            src="images/meals.webp" alt="">
+                            src="https://cdn.pixabay.com/photo/2016/03/05/22/29/asian-1239294_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -143,7 +143,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="img-box">
                         <img style="border-radius: 100%;"
-                            src="images/Sushi-PNG-Image (1).png" alt="">
+                            src="https://cdn.pixabay.com/photo/2023/10/09/04/19/samosa-8303211_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>

@@ -400,6 +400,7 @@ a:focus {
   }
 
   .row {
+    padding: 15px;
     align-items: center;
   }
 
@@ -416,7 +417,8 @@ a:focus {
 
   .img-box {
     img {
-      width: 100%;
+      height:300px;
+      width: 300px;
     }
   }
 }
