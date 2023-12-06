@@ -54,7 +54,7 @@ if(!isset($_SESSION['username'])){
                     <li class="cc" ><a href="student.php">HOME</a></li>
                     <li class="cc" ><a href="menu1.php">MENU</a></li>
                     <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                    <li class="cc" ><a href="ctact.html">CONTACT</a></li>
+                    <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                     <a href="logout.php"> <button>LOG OUT</button></a>
                     </ul>
                 </div>
@@ -65,8 +65,9 @@ if(!isset($_SESSION['username'])){
         <section class="price_section layout_padding">
           <center> <h1>Student's Menu</h1></center>
         
-            <div class="container"><section class="main_menu">
-                <button class="menu_btn" onclick="filterSelection('breakfast')">Breakfast</button>
+            <div class="container">
+                <section class="main_menu">
+                <button class="menu_btn myfood" onclick="filterSelection('breakfast')">Breakfast</button>
                 <button class="menu_btn" onclick="filterSelection('lunch')">Meals</button>
                 <button class="menu_btn" onclick="filterSelection('snacks')">Snacks</button>
             </section>
@@ -103,7 +104,8 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 30%;"
+                        <img style="border-radius: 30%; width: 200px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2016/03/05/22/29/asian-1239294_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -123,7 +125,8 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 30%;"
+                        <img style="border-radius: 30%; width: 240px;
+          height: 130px;"
                             src="https://imgs.search.brave.com/GXvodfreH7759Dg2si9SltfQr13lJ1Li7hxvAg5eA88/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbmRp/YW5hbWJyb3NpYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDUvQWxvby1Q/dXJpLS5qcGc" alt="">
                     </div>
                     <div class="detail-box">
@@ -144,11 +147,12 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="">
+                        <img style=" width: 240px;
+          height: 130px;" src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$20.00</span>
+                            <span>20.00</span>
                         </h5>
                         <a onclick="buy(2)" >
                             Buy
@@ -164,12 +168,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;"
+                        <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="images/golibaje.webp" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -185,12 +190,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2012/07/09/07/48/eat-52075_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -205,12 +211,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731812_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -226,12 +233,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://imgs.search.brave.com/nt1YhxrIayHdEiSLtDwdzBKu6ALGPhFvrE3BwhnJSTk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjMtMDIvZzg1NWE1/NG9fYmVldHJvb3Qt/Y3VyZC1yaWNlXzYy/NXgzMDBfMDRfRmVi/cnVhcnlfMjMuanBn/P2ltPUZhY2VDcm9w/LGFsZ29yaXRobT1k/bm4sd2lkdGg9NjIw/LGhlaWdodD0zNTA" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -246,12 +254,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/02/12/15/00/biryani-7009110_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -266,12 +275,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/06/27/05/37/biryani-7286737_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -287,12 +297,13 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2019/08/30/09/17/noodles-4440831_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -309,7 +320,8 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/03/23/15/40/panipuri-7087439_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -329,7 +341,8 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2023/10/09/04/19/samosa-8303211_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -345,16 +358,17 @@ if(!isset($_SESSION['username'])){
                         <div class="box">
                     <div class="name">
                         <h6>
-                          \sandwich
+                          sandwich
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 10%;"
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2012/05/26/15/27/sandwich-49244_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>70.00</span>
                         </h5>
                         <a onclick="buy(3)">
                             Buy
@@ -369,7 +383,9 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_1280.jpg" alt="">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                         src="https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -389,7 +405,9 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -408,7 +426,9 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="https://cdn.pixabay.com/photo/2018/06/25/16/57/potato-3497393_1280.jpg" alt="">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2018/06/25/16/57/potato-3497393_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>

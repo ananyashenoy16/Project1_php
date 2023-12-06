@@ -144,7 +144,7 @@ button{
     left: 40%;
   }
   .d127_42 { 
-    border:5px solid rgb(255, 255, 255);
+    border:px solid rgb(255, 255, 255);
   }
   .e127_43 { 
     visibility: hidden;
@@ -183,6 +183,7 @@ button{
 }
 
 .heading_container h2 {
+  
   position: relative;
 }
 

@@ -267,6 +267,10 @@ footer
     color: #ffffff;
     margin-top: 15px;
 }
+.price_section .price_container .box .img-box img {
+    height: 130px;
+    width: 200px;
+}
 .head{
 
     display: flex;
@@ -295,6 +299,13 @@ border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.mybutton{
+  background: #fff;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  /* right: 100px; */
 }
 @media screen and (max-width:900px) {
     .bg-img{

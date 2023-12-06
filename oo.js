@@ -6,7 +6,7 @@ function Create2DArray(rows,columns) {
     return x;
  }
  var arr = Create2DArray(60,60);
-  arr[0][0]="Diamond sushi";
+  arr[0][0]="Meals";
   arr[0][1]=70;
   arr[1][0]="Ringoti";
   arr[1][1]=30;
@@ -26,12 +26,12 @@ function buy(i){
     var y = document.getElementById("bil");
 
     x.value+=name+"-";
-    y.value+=price + "$"+"-";
+    y.value+=price +"-";
     total += price;
 }
 function Total(){
     var t = document.getElementById("total");
-    t.value = total + "$";
+    t.value = total ;
 }
 // function buy(i){
 //     var name = arr[i][0];

@@ -18,7 +18,7 @@ if(!isset($_SESSION['username'])){
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
             />
-
+            <script src="https://kit.fontawesome.com/b7a08da434.js" crossorigin="anonymous"></script>
         <!-- bootstrap core css -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -28,6 +28,11 @@ if(!isset($_SESSION['username'])){
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
         <script src="oo.js" defer></script>
+        <style>
+            .active{
+                background-color: #ff4b2b;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -45,45 +50,62 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="nav-link">
                     <ul>
+                    <i class="fa-solid fa-xmark close" style="color: #ffffff;" onclick=""></i>
                     <li class="cc" ><a href="teacher.php">HOME</a></li>
                     <li class="cc" ><a href="menu2.php">MENU</a></li>
-                    <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                    <li class="cc" ><a href="ctact.html">CONTACT</a></li>
+                    <li class="cc" ><a href="about2.html">ABOUT</a></li>
+                    <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                     <a href="logout.php"> <button>LOG OUT</button></a>
                     </ul>
                 </div>
                 <img class="menup" src="images/Capturejk.PNG" alt="sushi">
             </nav>
-       
-      
-            <!-- <img class="iml" src="images/welcome.png" alt="">
-            <p class="texts">Menu</p> -->
         </header>
       
         <section class="price_section layout_padding">
           <center> <h1>Teacher's Menu</h1></center>
         
-            <div class="container"><section class="main_menu">
-                <button class="menu_btn" onclick="filterSelection('sushi')">Breakfast</button>
-                <button class="menu_btn" onclick="filterSelection('salade')">Meals</button>
-                <button class="menu_btn" onclick="filterSelection('all')">Snacks</button>
+            <div class="container">
+                <section class="main_menu">
+                <button class="menu_btn myfood" onclick="filterSelection('breakfast')">Breakfast</button>
+                <button class="menu_btn" onclick="filterSelection('lunch')">Meals</button>
+                <button class="menu_btn" onclick="filterSelection('snacks')">Snacks</button>
             </section>
 
             <div class="heading_container">
             </div>
             <div class="price_container">
                
-
-                
-                    <div class="filterDiv sushi">
+                        <!-- -------------- breakfast-------------------- -->
+                        <div class="filterDiv breakfast">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Veg Meals
+                            Idli
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 30%;"
+                        <img src="https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="buy(1)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                    <div class="filterDiv breakfast">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            Pulav
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                        <img style="border-radius: 30%; width: 200px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2016/03/05/22/29/asian-1239294_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -95,38 +117,42 @@ if(!isset($_SESSION['username'])){
                         </a>
                     </div></div>
                 </div> 
-                    <div class="filterDiv sushi">
+                <div class="filterDiv breakfast">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Carrot Crunch Roll
+                          Poori
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="images/Sushi-PNG-Image (1).png" alt="">
+                        <img style="border-radius: 30%; width: 240px;
+          height: 130px;"
+                            src="https://imgs.search.brave.com/GXvodfreH7759Dg2si9SltfQr13lJ1Li7hxvAg5eA88/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbmRp/YW5hbWJyb3NpYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDUvQWxvby1Q/dXJpLS5qcGc" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>30.00</span>
+                            <span>90.00</span>
                         </h5>
-                        <a onclick="buy(1)">
+                        <a onclick="buy(0)">
                             Buy
                         </a>
                     </div></div>
                 </div> 
-                    <div class="filterDiv sushi">
+                   
+                    <div class="filterDiv breakfast">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Zen Garden Roll
+                            Masala Dosa
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="images/Sushi-PNG-Image (1).png" alt="">
+                        <img style=" width: 240px;
+          height: 130px;" src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$20.00</span>
+                            <span>20.00</span>
                         </h5>
                         <a onclick="buy(2)" >
                             Buy
@@ -134,15 +160,189 @@ if(!isset($_SESSION['username'])){
                     </div>
                 </div></div>
                 
-                    <div class="filterDiv salade">
+                    <div class="filterDiv breakfast">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Spinach Sensation Roll
+                            Golibaje
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;"
+                        <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="images/golibaje.webp" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                <!-- ----------lunch------------ -->
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            South Indian Meals
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2012/07/09/07/48/eat-52075_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            North Indian Meal Combo
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731812_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            Curd Rice
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://imgs.search.brave.com/nt1YhxrIayHdEiSLtDwdzBKu6ALGPhFvrE3BwhnJSTk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjMtMDIvZzg1NWE1/NG9fYmVldHJvb3Qt/Y3VyZC1yaWNlXzYy/NXgzMDBfMDRfRmVi/cnVhcnlfMjMuanBn/P2ltPUZhY2VDcm9w/LGFsZ29yaXRobT1k/bm4sd2lkdGg9NjIw/LGhlaWdodD0zNTA" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Biryani
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2022/02/12/15/00/biryani-7009110_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>  
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Fried Rice
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2022/06/27/05/37/biryani-7286737_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+              
+                <div class="filterDiv lunch">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                           Noodles
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2019/08/30/09/17/noodles-4440831_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+              
+                  <!-- ---------------snacks------------- -->
+                <div class="filterDiv snacks">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Panipuri
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2022/03/23/15/40/panipuri-7087439_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                <div class="filterDiv snacks">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            Samosa
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
                             src="https://cdn.pixabay.com/photo/2023/10/09/04/19/samosa-8303211_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -153,16 +353,39 @@ if(!isset($_SESSION['username'])){
                             Buy
                         </a>
                     </div></div>
-                </div> 
-                    <div class="filterDiv salade">
+                </div>
+                <div class="filterDiv snacks">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Teriyaki Mushroom Marvel Roll
+                          sandwich
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="images/Sushi-PNG-Image (1).png" alt="">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2012/05/26/15/27/sandwich-49244_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="buy(3)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>
+                    <div class="filterDiv snacks">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                           Burger
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                         src="https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -174,14 +397,38 @@ if(!isset($_SESSION['username'])){
                     </div>
                     </div>
                 </div> 
-                    <div class="filterDiv salade"><div class="box">
+                <div class="filterDiv snacks">
+                        <div class="box">
                     <div class="name">
                         <h6>
-                            Quinoa Harvest Roll
+                           Pasta
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img src="images/Sushi-PNG-Image (1).png" alt="">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="buy(4)">
+                            Buy
+                        </a>
+                    </div>
+                    </div>
+                </div> 
+                    <div class="filterDiv snacks"><div class="box">
+                    <div class="name">
+                        <h6>
+                           French Fries
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="border-radius: 100%;  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2018/06/25/16/57/potato-3497393_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -195,10 +442,11 @@ if(!isset($_SESSION['username'])){
                 </div>
             
             </div>
+            
         </div>
         </section>
         <section class="main_menu">
-            <img class="imga" src="images/vcg.png" alt="">
+            <img class="imga" src="https://cdn.pixabay.com/photo/2023/07/12/20/40/ai-generated-8123328_1280.png" alt="">
             <div class="khlass">
                 <div class="inpo">
         
@@ -270,8 +518,8 @@ if(!isset($_SESSION['username'])){
                                     <input type="text" id="email2">
                                 </div>
                                 <div>
-                                    <button>
-                                        subscribe
+                                    <button  style="border:2px solid #fff;">
+                                        Submit
                                     </button>
                                 </div>
                             </form>
@@ -318,5 +566,8 @@ if(!isset($_SESSION['username'])){
         menuHamburger.addEventListener('click',()=>{
         navLink.classList.toggle('menum')
         })
+      
+        // Update the filterSelection function to handle button clicks and change color
+    </script>
     </script>
 </html>

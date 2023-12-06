@@ -13,9 +13,7 @@ if(!isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student's Menu</title>
     <link rel="stylesheet" href="style1.css">
-    <style>
-  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=DM+Sans:ital,opsz,wght@1,9..40,100&family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
-   </style>
+    <script src="https://kit.fontawesome.com/b7a08da434.js" crossorigin="anonymous"></script>
      <!-- bootstrap core css -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
       
@@ -25,44 +23,41 @@ if(!isset($_SESSION['username'])){
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <style>
-        .btn{
-            border:3px;
-            color:white;
-            background-color:#fff;
-        }
-    </style>
 </head>
 <body>
       
        
-      <header class="welcome">
+      <header>
        
         <div class="bg-img">
-          <img src="images/mymai.jpg"  class="we" alt="">
+          <img src="https://cdn.pixabay.com/photo/2022/05/17/05/03/vegetable-gravy-7201669_1280.jpg"  class="we" alt="">
         </div>
         <nav class="navbar">
           <div class="logo">
               <a href="#"><img src="images/welcome1.png" alt="sushi"></a>
           </div>
-          <div class="nav-link">
-              <ul >
-                  <li class="cc" ><a href="teacher.php">HOME</a></li>
+          <div class="nav-link" >
+              <ul id="myul" >
+                  <li class="cc" ><a href="student.php">HOME</a></li>
                   <li class="cc" ><a href="menu2.php">MENU</a></li>
                   <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                  <li class="cc" ><a href="ctact.html">CONTACT</a></li>
+                  <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                   <a href="logout.php"> <button>LOG OUT</button></a>
               </ul>
           </div>
           <img class="menup" src="images/Capturejk.PNG" alt="sushi">
-      
+          </div>
+            </div>
+       
       </nav>
-          <div class="overlay">
-           <!-- <img class="iml" src="images/homelogo1.png" alt=""> -->
-                  <!-- <p class="texts">CAN CAFE</p> -->
-                </div>   
-      </header>
-      
+    
+    <div class="text-box">
+          <h1>CAN</h1>
+          <h1 style="font-size:160px;">CAFE</h1>
+    </div>
+ 
+  </header>
+ 
       <div class="newbg">
       <section class="about_section layout_padding2-top layout_padding-bottom ">
       <center>
@@ -83,8 +78,8 @@ if(!isset($_SESSION['username'])){
                <div class="col-md-6">
                 <div class="detail-box">
                  
-                  <h5 style="font-family: hedvig letters serif;font-size:22px">
-                    Good food is more than just sustenance; it's a sensory experience that nourishes both the body and the soul. The aroma of a well-seasoned dish can evoke memories and stir emotions. The vibrant colors on a plate can be a feast for the eyes, enticing and inviting. Each bite holds the potential to transport us to different corners of the world, introducing us to diverse cultures and culinary traditions. Beyond the pleasurable taste, good food has the power to bring people together, fostering connections and creating cherished moments. 
+                  <h5 style="font-family: hedvig letters serif;font-size:20px">
+                  Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of [Location], our charming cafe invites you to embark on a journey of flavors and relaxation. At Can Cafe, we celebrate the art of brewing with a diverse selection of premium coffees and teas sourced from around the globe, meticulously curated to tantalize your taste buds. Whether you're seeking a tranquil spot to unwind, catch up with friends, or indulge in a moment of solitude, our warm ambiance and delectable offerings aim to create an unforgettable experience. Join us in savoring the essence of each sip as we invite you to discover the extraordinary in every cup at Can Cafe.
                   </h5>
                 </div>
               </div>
@@ -206,7 +201,7 @@ if(!isset($_SESSION['username'])){
                     <input type="text" id="email2">
                   </div>
                   <div>
-                    <button>
+                    <button style="border:2px solid #fff;">
                       SUBMIT
                     </button>
                   </div>
@@ -250,6 +245,17 @@ if(!isset($_SESSION['username'])){
         </footer>
         
 
-   
+    
 </body>
+<script>
+        
+       
+        function openMenu(){
+          var nav=document.getElementById("myul");
+          nav.style.right=200px;
+        }
+        function closemenu(){
+          nav.style.right=-200px;
+        }
+   </script>
 </html>

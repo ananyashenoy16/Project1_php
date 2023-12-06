@@ -41,7 +41,7 @@ if(!isset($_SESSION['username'])){
                   <li class="cc" ><a href="student.php">HOME</a></li>
                   <li class="cc" ><a href="menu1.php">MENU</a></li>
                   <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                  <li class="cc" ><a href="ctact.html">CONTACT</a></li>
+                  <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                   <a href="logout.php"> <button>LOG OUT</button></a>
               </ul>
           </div>
