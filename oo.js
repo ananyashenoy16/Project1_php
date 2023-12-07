@@ -6,18 +6,40 @@ function Create2DArray(rows,columns) {
     return x;
  }
  var arr = Create2DArray(60,60);
-  arr[0][0]="Meals";
-  arr[0][1]=70;
-  arr[1][0]="Ringoti";
-  arr[1][1]=30;
-  arr[2][0]="Diag";
-  arr[2][1]=20;
-  arr[3][0]="maki";
-  arr[3][1]=70;
-  arr[4][0]="zushi";
-  arr[4][1]=30;
-  arr[5][0]="shi";
-  arr[5][1]=20;
+  arr[0][0]="Idli";
+  arr[0][1]=30;
+  arr[1][0]="Pulav";
+  arr[1][1]=40;
+  arr[2][0]="Poori";
+  arr[2][1]=40;
+  arr[3][0]="masala";
+  arr[3][1]=50;
+  arr[4][0]="gbaje";
+  arr[4][1]=40;
+  arr[5][0]="Smeals";
+  arr[5][1]=70;
+  arr[6][0]="Nmeals";
+  arr[6][1]=90;
+  arr[6][0]="Crice";
+  arr[6][1]=50;
+  arr[7][0]="Biryani";
+  arr[7][1]=90;
+  arr[8][0]="Frice";
+  arr[8][1]=60;
+  arr[9][0]="Noodles";
+  arr[9][1]=70;
+  arr[10][0]="PPuri";
+  arr[10][1]=30;
+  arr[11][0]="Samosa";
+  arr[11][1]=20;
+  arr[12][0]="Sandwich";
+  arr[12][1]=40;
+  arr[13][0]="Burger";
+  arr[13][1]=50;
+  arr[14][0]="Pasta";
+  arr[14][1]=40;
+  arr[15][0]="Fries";
+  arr[15][1]=50;
   var total=0;
 function buy(i){
     var name = arr[i][0];
@@ -26,7 +48,7 @@ function buy(i){
     var y = document.getElementById("bil");
 
     x.value+=name+"-";
-    y.value+=price +"-";
+    y.value+=price +"+";
     total += price;
 }
 function Total(){

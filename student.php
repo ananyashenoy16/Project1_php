@@ -62,8 +62,9 @@ if(!isset($_SESSION['username'])){
       <section class="about_section layout_padding2-top layout_padding-bottom ">
       <center>
         <div >
-            <h3 style=" font-size:50px ;color:#000;font-family: hedvig letters serif;">
-                " There's no one to stop when your hungry " 
+            <h3 style=" font-size:40px ;color:#000;font-family: hedvig letters serif;">
+                 THERE'S NO ONE TO STOP WHEN YOU ARE HUNGRY <img src="https://www.svgrepo.com/show/490738/food-restaurant.svg" style="height:50px;width:50px;" alt="">
+                
             </h3>
           </div>
         </center>
@@ -72,14 +73,14 @@ if(!isset($_SESSION['username'])){
              
               <div class="col-md-6">
                 <div class="img-box">
-                  <img style="border-radius: 20px;" src="images/thali.webp" alt="">
+                  <img style="border-radius: 10px; width:470px;height:350px" src="https://cdn.pixabay.com/photo/2020/09/17/22/45/waiter-5580500_1280.png"  alt="">
                 </div>
               </div>
                <div class="col-md-6">
                 <div class="detail-box">
                  
-                  <h5 style="font-family: hedvig letters serif;font-size:20px">
-                  Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of [Location], our charming cafe invites you to embark on a journey of flavors and relaxation. At Can Cafe, we celebrate the art of brewing with a diverse selection of premium coffees and teas sourced from around the globe, meticulously curated to tantalize your taste buds. Whether you're seeking a tranquil spot to unwind, catch up with friends, or indulge in a moment of solitude, our warm ambiance and delectable offerings aim to create an unforgettable experience. Join us in savoring the essence of each sip as we invite you to discover the extraordinary in every cup at Can Cafe.
+                  <h5 style="font-family: hedvig letters serif;font-size:22px;font-weight:550;">
+                  Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of MANGALORE, our charming cafe invites you to embark on a journey of flavors and relaxation. <br> <br>At Can Cafe, we celebrate the art of brewing with a diverse selection of premium coffees and teas sourced from around the globe, meticulously curated to tantalize your taste buds. Whether you're seeking a tranquil spot to unwind, catch up with friends, or indulge in a moment of solitude, our warm ambiance and delectable offerings aim to create an unforgettable experience at Can Cafe.
                   </h5>
                 </div>
               </div>
@@ -89,8 +90,8 @@ if(!isset($_SESSION['username'])){
        
         <section class="price_section layout_padding">
           <CENter>
-            <h3 style="color:#000 ;">
-              WE ARE FAMOUS FROM  AGES FOR ...!!!
+            <h3 style="color:#000 ; font-size:40px;">
+              WE ARE FAMOUS FROM  AGES FOR <img src="https://www.svgrepo.com/show/490737/food-dish.svg"  style="height:70px;width:70px;">
           </h3>
           </CENter>
           <div class="container">
@@ -98,7 +99,7 @@ if(!isset($_SESSION['username'])){
             </div>
             <div class="price_container">
              
-              <div class="box">
+              <div class="box1">
                 
                 <div class="img-box">
                   <img style="border-radius: 100%;" src="images/golibaje.webp" alt="">
@@ -112,7 +113,7 @@ if(!isset($_SESSION['username'])){
                  
                 </div>
               </div>    
-              <div class="box">
+              <div class="box1">
                 
                   <div class="img-box">
                     <img style="border-radius: 100%;" src="images/dose.webp" alt="">
@@ -127,7 +128,7 @@ if(!isset($_SESSION['username'])){
                    
                   </div>
                 </div>    
-                <div class="box">
+                <div class="box1">
                 
                   <div class="img-box">
                     <img style="border-radius: 100%;" src="images/naan.webp" alt="">
@@ -198,7 +199,7 @@ if(!isset($_SESSION['username'])){
                 <form action="">
                   <div class="email_box">
                     <label for="email2">ENTER YOUR FEEDBACK HERE</label>
-                    <input type="text" id="email2">
+                    <input type="text" id="email2" required>
                   </div>
                   <div>
                     <button style="border:2px solid #fff;">

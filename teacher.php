@@ -38,9 +38,9 @@ if(!isset($_SESSION['username'])){
           </div>
           <div class="nav-link" >
               <ul id="myul" >
-                  <li class="cc" ><a href="student.php">HOME</a></li>
+                  <li class="cc" ><a href="teacher.php">HOME</a></li>
                   <li class="cc" ><a href="menu2.php">MENU</a></li>
-                  <li class="cc" ><a href="about1.html">ABOUT</a></li>
+                  <li class="cc" ><a href="about2.html">ABOUT</a></li>
                   <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                   <a href="logout.php"> <button>LOG OUT</button></a>
               </ul>

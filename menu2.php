@@ -67,9 +67,9 @@ if(!isset($_SESSION['username'])){
         
             <div class="container">
                 <section class="main_menu">
-                <button class="menu_btn myfood" onclick="filterSelection('breakfast')">Breakfast</button>
-                <button class="menu_btn" onclick="filterSelection('lunch')">Meals</button>
-                <button class="menu_btn" onclick="filterSelection('snacks')">Snacks</button>
+                <button class="menu_btn myfood" onclick="filterSelection('breakfast')">Veg</button>
+                <button class="menu_btn" onclick="filterSelection('lunch')">Non-Veg</button>
+                <button class="menu_btn" onclick="filterSelection('snacks')">Special Meals</button>
             </section>
 
             <div class="heading_container">

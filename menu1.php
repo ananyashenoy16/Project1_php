@@ -91,7 +91,7 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>30.00</span>
                         </h5>
-                        <a onclick="buy(1)">
+                        <a onclick="buy(0)">
                             Buy
                         </a>
                     </div></div>
@@ -104,15 +104,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 30%; width: 200px;
+                        <img style=" width: 200px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2016/03/05/22/29/asian-1239294_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>90.00</span>
+                            <span>40.00</span>
                         </h5>
-                        <a onclick="buy(0)">
+                        <a onclick="buy(1)">
                             Buy
                         </a>
                     </div></div>
@@ -125,15 +125,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 30%; width: 240px;
+                        <img style=" width: 240px;
           height: 130px;"
                             src="https://imgs.search.brave.com/GXvodfreH7759Dg2si9SltfQr13lJ1Li7hxvAg5eA88/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbmRp/YW5hbWJyb3NpYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDUvQWxvby1Q/dXJpLS5qcGc" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>90.00</span>
+                            <span>40.00</span>
                         </h5>
-                        <a onclick="buy(0)">
+                        <a onclick="buy(2)">
                             Buy
                         </a>
                     </div></div>
@@ -152,9 +152,9 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>20.00</span>
+                            <span>50.00</span>
                         </h5>
-                        <a onclick="buy(2)" >
+                        <a onclick="buy(3)" >
                             Buy
                         </a>
                     </div>
@@ -168,15 +168,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                        <img style="border-radius: 100%;  width: 240px;
+                        <img style="  width: 240px;
           height: 130px;"
                             src="images/golibaje.webp" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>40.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(4)">
                             Buy
                         </a>
                     </div></div>
@@ -190,7 +190,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2012/07/09/07/48/eat-52075_1280.jpg" alt="">
                     </div>
@@ -198,7 +198,7 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(5)">
                             Buy
                         </a>
                     </div></div>
@@ -211,15 +211,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731812_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>90.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(6)">
                             Buy
                         </a>
                     </div></div>
@@ -233,15 +233,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://imgs.search.brave.com/nt1YhxrIayHdEiSLtDwdzBKu6ALGPhFvrE3BwhnJSTk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjMtMDIvZzg1NWE1/NG9fYmVldHJvb3Qt/Y3VyZC1yaWNlXzYy/NXgzMDBfMDRfRmVi/cnVhcnlfMjMuanBn/P2ltPUZhY2VDcm9w/LGFsZ29yaXRobT1k/bm4sd2lkdGg9NjIw/LGhlaWdodD0zNTA" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>50.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(6)">
                             Buy
                         </a>
                     </div></div>
@@ -254,15 +254,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/02/12/15/00/biryani-7009110_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>90.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(7)">
                             Buy
                         </a>
                     </div></div>
@@ -275,15 +275,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/06/27/05/37/biryani-7286737_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>60.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(8)">
                             Buy
                         </a>
                     </div></div>
@@ -297,7 +297,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2019/08/30/09/17/noodles-4440831_1280.jpg" alt="">
                     </div>
@@ -305,7 +305,7 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(9)">
                             Buy
                         </a>
                     </div></div>
@@ -320,7 +320,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/03/23/15/40/panipuri-7087439_1280.jpg" alt="">
                     </div>
@@ -328,7 +328,7 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>30.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(10)">
                             Buy
                         </a>
                     </div></div>
@@ -341,15 +341,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2023/10/09/04/19/samosa-8303211_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>20.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(11)">
                             Buy
                         </a>
                     </div></div>
@@ -362,15 +362,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2012/05/26/15/27/sandwich-49244_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>40.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="buy(12)">
                             Buy
                         </a>
                     </div></div>
@@ -383,15 +383,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                          src="https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>30.00</span>
+                            <span>50.00</span>
                         </h5>
-                        <a onclick="buy(4)">
+                        <a onclick="buy(13)">
                             Buy
                         </a>
                     </div>
@@ -405,15 +405,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                         src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>30.00</span>
+                            <span>40.00</span>
                         </h5>
-                        <a onclick="buy(4)">
+                        <a onclick="buy(14)">
                             Buy
                         </a>
                     </div>
@@ -426,15 +426,15 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                         src="https://cdn.pixabay.com/photo/2018/06/25/16/57/potato-3497393_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>20.00</span>
+                            <span>50.00</span>
                         </h5>
-                        <a onclick="buy(5)">
+                        <a onclick="buy(15)">
                             Buy
                         </a>
                     </div>
@@ -455,7 +455,7 @@ if(!isset($_SESSION['username'])){
                       </div>
                     <input style="width:100% ;" id="bill" type="text"  class="billu"  value="ORDER:">
                     <input style="width:100% ;" id="bil" type="text" class="billu" value="PRICE:">
-                    <input  style="width:100% ;" id="total" type="text" class="billu" value="CONFIRM TOTAL:">
+                    <input  style="width:100% ;" id="total" type="text" class="billu" value="TOTAL:">
                     <button class="confi" onclick="Total()">calculate</button>
 
                 </div>

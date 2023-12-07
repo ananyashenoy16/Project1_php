@@ -89,10 +89,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 header {
    
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
 
     width: 100%;
-    background-color: #fff;
+    background-color:#fff;
     background-attachment: cover;
 
 }
@@ -258,6 +258,7 @@ footer
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+
   .price_section .price_container .box .detail-box a {
     display: inline-block;
     padding: 5px 15px;
@@ -266,10 +267,58 @@ footer
     font-weight: bold;
     color: #ffffff;
     margin-top: 15px;
+    cursor: pointer;
 }
 .price_section .price_container .box .img-box img {
     height: 130px;
     width: 200px;
+}
+.price_section .price_container .box1 {
+    min-width: 300px;
+    max-width: 400px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 35px 10px;
+    padding: 19px 0 7px 0;
+    text-align: center;
+    background:transparent;
+    -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+    border-radius: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+            transition: 0.5s;
+  }
+  .price_section .price_container .box1 .img-box img {
+    height: 200px;
+    width: 250px;
+}
+.price_section .price_container .box1 .detail-box h6{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-weight: bold;
+    color: #000;
+    margin-top: 7px;
+    cursor: pointer;
+   
+}
+.price_section .price_container .box1:hover{
+    transform: translateY(-30px);
 }
 .head{
 
@@ -301,11 +350,30 @@ border-radius: 10px;
     justify-content: space-evenly;
 }
 .mybutton{
-  background: #fff;
+  /* background: #fff; */
   padding: 5px;
   width: 100px;
   height: 50px;
-  /* right: 100px; */
+  margin-right: 20px;
+}
+.mybutton:hover{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: #fff;
+    color:#fff;
+}
+.about_section .img-box img {
+    height: 300px;
+    width: 250px;
+    margin: 50px auto;
+}
+.coffee{
+    margin-left: 15px;
+    height: 45px;
+    width: 50px;
+}
+.coffee-main{
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width:900px) {
     .bg-img{
