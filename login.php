@@ -43,7 +43,7 @@ $num=mysqli_num_rows($result);
     else
     {
        $invalid=1;
-    //    header('location:index.html');
+    //    header('location:login.html');
        echo "<script>
         
                    window.onload=function(){

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header('location:index.html');
+    header('location:login.html');
 }
 
  ?>  
@@ -11,7 +11,7 @@ if(!isset($_SESSION['username'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student's Menu</title>
+    <title>Student's Home</title>
     <link rel="stylesheet" href="style1.css">
     <script src="https://kit.fontawesome.com/b7a08da434.js" crossorigin="anonymous"></script>
      <!-- bootstrap core css -->
@@ -62,7 +62,7 @@ if(!isset($_SESSION['username'])){
       <section class="about_section layout_padding2-top layout_padding-bottom ">
       <center>
         <div >
-            <h3 style=" font-size:40px ;color:#000;font-family: hedvig letters serif;">
+            <h3 style=" font-size:40px ;color:#000;">
                  THERE'S NO ONE TO STOP WHEN YOU ARE HUNGRY <img src="https://www.svgrepo.com/show/490738/food-restaurant.svg" style="height:50px;width:50px;" alt="">
                 
             </h3>
@@ -73,14 +73,14 @@ if(!isset($_SESSION['username'])){
              
               <div class="col-md-6">
                 <div class="img-box">
-                  <img style="border-radius: 10px; width:470px;height:350px" src="https://cdn.pixabay.com/photo/2020/09/17/22/45/waiter-5580500_1280.png"  alt="">
+                  <img style="border-radius: 10px; width:470px;height:350px" src="https://cdn.pixabay.com/photo/2023/07/12/20/40/ai-generated-8123329_1280.png"  alt="">
                 </div>
               </div>
                <div class="col-md-6">
                 <div class="detail-box">
                  
-                  <h5 style="font-family: hedvig letters serif;font-size:22px;font-weight:550;">
-                  Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of MANGALORE, our charming cafe invites you to embark on a journey of flavors and relaxation. <br> <br>At Can Cafe, we celebrate the art of brewing with a diverse selection of premium coffees and teas sourced from around the globe, meticulously curated to tantalize your taste buds. Whether you're seeking a tranquil spot to unwind, catch up with friends, or indulge in a moment of solitude, our warm ambiance and delectable offerings aim to create an unforgettable experience at Can Cafe.
+                  <h5 style="font-family: hedvig letters serif;font-size:40px;font-weight:550;">
+                  Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of MANGALORE, our charming cafe invites you to embark on a journey of flavors and relaxation. 
                   </h5>
                 </div>
               </div>

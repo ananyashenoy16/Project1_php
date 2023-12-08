@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header('location:index.html');
+    header('location:login.html');
 }
 
  ?>  
@@ -9,12 +9,12 @@ if(!isset($_SESSION['username'])){
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" href="images/logo.png"/>
+        <link rel="icon" type="image/png" href="favicon-32x32.png"/>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-        <title>Document</title>
+        <title>Student's Menu</title>
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
             />

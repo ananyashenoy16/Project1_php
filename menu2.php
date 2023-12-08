@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
-    header('location:index.html');
+    header('location:login.html');
 }
 
  ?>  
@@ -9,12 +9,12 @@ if(!isset($_SESSION['username'])){
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" href="images/logo.png"/>
+        <link rel="icon" type="image/png" href="favicon-32x32.png"/>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-        <title>Document</title>
+        <title>Teacher's Menu</title>
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
             />
@@ -67,122 +67,18 @@ if(!isset($_SESSION['username'])){
         
             <div class="container">
                 <section class="main_menu">
-                <button class="menu_btn myfood" onclick="filterSelection('breakfast')">Veg</button>
-                <button class="menu_btn" onclick="filterSelection('lunch')">Non-Veg</button>
-                <button class="menu_btn" onclick="filterSelection('snacks')">Special Meals</button>
+                <button class="menu_btn myfood" onclick="filterSelection('veg')">Veg</button>
+                <button class="menu_btn" onclick="filterSelection('non')">Non-Veg</button>
+                <button class="menu_btn" onclick="filterSelection('special')"> Can-cafe Special</button>
             </section>
 
             <div class="heading_container">
             </div>
             <div class="price_container">
                
-                        <!-- -------------- breakfast-------------------- -->
-                        <div class="filterDiv breakfast">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                            Idli
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img src="https://cdn.pixabay.com/photo/2017/06/16/11/38/breakfast-2408818_1280.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>30.00</span>
-                        </h5>
-                        <a onclick="buy(1)">
-                            Buy
-                        </a>
-                    </div></div>
-                </div> 
-                    <div class="filterDiv breakfast">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                            Pulav
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img style="border-radius: 30%; width: 200px;
-          height: 130px;"
-                            src="https://cdn.pixabay.com/photo/2016/03/05/22/29/asian-1239294_1280.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>90.00</span>
-                        </h5>
-                        <a onclick="buy(0)">
-                            Buy
-                        </a>
-                    </div></div>
-                </div> 
-                <div class="filterDiv breakfast">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                          Poori
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img style="border-radius: 30%; width: 240px;
-          height: 130px;"
-                            src="https://imgs.search.brave.com/GXvodfreH7759Dg2si9SltfQr13lJ1Li7hxvAg5eA88/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbmRp/YW5hbWJyb3NpYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDUvQWxvby1Q/dXJpLS5qcGc" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>90.00</span>
-                        </h5>
-                        <a onclick="buy(0)">
-                            Buy
-                        </a>
-                    </div></div>
-                </div> 
-                   
-                    <div class="filterDiv breakfast">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                            Masala Dosa
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img style=" width: 240px;
-          height: 130px;" src="https://cdn.pixabay.com/photo/2016/10/25/13/42/indian-1768906_1280.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>20.00</span>
-                        </h5>
-                        <a onclick="buy(2)" >
-                            Buy
-                        </a>
-                    </div>
-                </div></div>
-                
-                    <div class="filterDiv breakfast">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                            Golibaje
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img style="border-radius: 100%;  width: 240px;
-          height: 130px;"
-                            src="images/golibaje.webp" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>70.00</span>
-                        </h5>
-                        <a onclick="buy(3)">
-                            Buy
-                        </a>
-                    </div></div>
-                </div> 
-                <!-- ----------lunch------------ -->
-                <div class="filterDiv lunch">
+                      
+                <!-- ----------veg------------ -->
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -190,7 +86,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style=" width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2012/07/09/07/48/eat-52075_1280.jpg" alt="">
                     </div>
@@ -198,12 +94,12 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(0)">
                             Buy
                         </a>
                     </div></div>
                 </div>
-                <div class="filterDiv lunch">
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -211,7 +107,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731812_1280.jpg" alt="">
                     </div>
@@ -219,13 +115,13 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(1)">
                             Buy
                         </a>
                     </div></div>
                 </div> 
                 
-                <div class="filterDiv lunch">
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -233,7 +129,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://imgs.search.brave.com/nt1YhxrIayHdEiSLtDwdzBKu6ALGPhFvrE3BwhnJSTk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjMtMDIvZzg1NWE1/NG9fYmVldHJvb3Qt/Y3VyZC1yaWNlXzYy/NXgzMDBfMDRfRmVi/cnVhcnlfMjMuanBn/P2ltPUZhY2VDcm9w/LGFsZ29yaXRobT1k/bm4sd2lkdGg9NjIw/LGhlaWdodD0zNTA" alt="">
                     </div>
@@ -241,12 +137,12 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(2)">
                             Buy
                         </a>
                     </div></div>
                 </div>
-                <div class="filterDiv lunch">
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -254,7 +150,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/02/12/15/00/biryani-7009110_1280.jpg" alt="">
                     </div>
@@ -262,12 +158,12 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(3)">
                             Buy
                         </a>
                     </div></div>
                 </div>  
-                <div class="filterDiv lunch">
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -275,7 +171,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2022/06/27/05/37/biryani-7286737_1280.jpg" alt="">
                     </div>
@@ -283,13 +179,13 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(4)">
                             Buy
                         </a>
                     </div></div>
                 </div> 
               
-                <div class="filterDiv lunch">
+                <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -297,7 +193,7 @@ if(!isset($_SESSION['username'])){
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                    <img style="  width: 240px;
           height: 130px;"
                             src="https://cdn.pixabay.com/photo/2019/08/30/09/17/noodles-4440831_1280.jpg" alt="">
                     </div>
@@ -305,136 +201,241 @@ if(!isset($_SESSION['username'])){
                         <h5>
                             <span>70.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(4)">
                             Buy
                         </a>
                     </div></div>
                 </div> 
-              
-                  <!-- ---------------snacks------------- -->
-                <div class="filterDiv snacks">
+                <!-- -------------- non-veg-------------------- -->
+                <div class="filterDiv non">
                         <div class="box">
                     <div class="name">
                         <h6>
-                          Panipuri
+                            Chilli chicken
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
-          height: 130px;"
-                            src="https://cdn.pixabay.com/photo/2022/03/23/15/40/panipuri-7087439_1280.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/08/07/19/19/chili-chicken-5471404_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
                             <span>30.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(5)">
                             Buy
                         </a>
                     </div></div>
                 </div> 
-                <div class="filterDiv snacks">
+                    <div class="filterDiv non">
                         <div class="box">
                     <div class="name">
                         <h6>
-                            Samosa
+                          Prawns curry
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                        <img style=" width: 200px;
           height: 130px;"
-                            src="https://cdn.pixabay.com/photo/2023/10/09/04/19/samosa-8303211_1280.jpg" alt="">
+                            src="https://cdn.pixabay.com/photo/2013/06/13/14/17/shrimp-139166_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>$70.00</span>
+                            <span>90.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(6)">
                             Buy
                         </a>
                     </div></div>
-                </div>
-                <div class="filterDiv snacks">
+                </div> 
+                <div class="filterDiv non">
                         <div class="box">
                     <div class="name">
                         <h6>
-                          sandwich
+                          chicken biryani
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
+                        <img style=" width: 240px;
           height: 130px;"
-                            src="https://cdn.pixabay.com/photo/2012/05/26/15/27/sandwich-49244_1280.jpg" alt="">
+                            src="https://cdn.pixabay.com/photo/2015/07/14/17/18/briyani-845111_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>90.00</span>
                         </h5>
-                        <a onclick="buy(3)">
+                        <a onclick="tbuy(7)">
                             Buy
                         </a>
                     </div></div>
-                </div>
-                    <div class="filterDiv snacks">
+                </div> 
+                   
+                    <div class="filterDiv non">
                         <div class="box">
                     <div class="name">
                         <h6>
-                           Burger
+                           Roast chicken
                         </h6>
                     </div>
                     <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
-          height: 130px;"
-                         src="https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238247_1280.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>30.00</span>
-                        </h5>
-                        <a onclick="buy(4)">
-                            Buy
-                        </a>
-                    </div>
-                    </div>
-                </div> 
-                <div class="filterDiv snacks">
-                        <div class="box">
-                    <div class="name">
-                        <h6>
-                           Pasta
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
-          height: 130px;"
-                        src="https://cdn.pixabay.com/photo/2016/08/28/10/49/takeaway-1625652_1280.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            <span>30.00</span>
-                        </h5>
-                        <a onclick="buy(4)">
-                            Buy
-                        </a>
-                    </div>
-                    </div>
-                </div> 
-                    <div class="filterDiv snacks"><div class="box">
-                    <div class="name">
-                        <h6>
-                           French Fries
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                    <img style="border-radius: 100%;  width: 240px;
-          height: 130px;"
-                        src="https://cdn.pixabay.com/photo/2018/06/25/16/57/potato-3497393_1280.jpg" alt="">
+                        <img style=" width: 240px;
+          height: 130px;" src="https://cdn.pixabay.com/photo/2016/11/08/10/39/chicken-1807883_1280.jpg" alt="">
                     </div>
                     <div class="detail-box">
                         <h5>
                             <span>20.00</span>
                         </h5>
-                        <a onclick="buy(5)">
+                        <a onclick="tbuy(8)" >
+                            Buy
+                        </a>
+                    </div>
+                </div></div>
+                
+                    <div class="filterDiv non">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                            Chicken meals
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                        <img style="  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731817_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>70.00</span>
+                        </h5>
+                        <a onclick="tbuy(9)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                  <!-- ---------------can-cafe special------------- -->
+                <div class="filterDiv special">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Jalebi
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2015/06/23/05/23/fresh-jalebi-818316_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="tbuy(10)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div> 
+                <div class="filterDiv special">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Dhoklas
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2017/01/10/18/00/indian-1969797_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="tbuy(11)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>
+                <div class="filterDiv special">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                           Rasgulla
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style=" width: 240px;
+          height: 130px;"
+                         src="https://cdn.pixabay.com/photo/2014/12/22/12/33/sweets-577230_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>30.00</span>
+                        </h5>
+                        <a onclick="tbuy(12)">
+                            Buy
+                        </a>
+                    </div>
+                    </div>
+                </div> 
+                <div class="filterDiv special">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                          Special Cookies
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="  width: 240px;
+          height: 130px;"
+                            src="https://cdn.pixabay.com/photo/2023/06/22/22/29/cookies-8082386_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>40.00</span>
+                        </h5>
+                        <a onclick="tbuy(13)">
+                            Buy
+                        </a>
+                    </div></div>
+                </div>
+                
+                <div class="filterDiv special">
+                        <div class="box">
+                    <div class="name">
+                        <h6>
+                           Cup cake
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2017/08/06/04/16/cupcake-2588646_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>50.00</span>
+                        </h5>
+                        <a onclick="tbuy(14)">
+                            Buy
+                        </a>
+                    </div>
+                    </div>
+                </div> 
+                    <div class="filterDiv special"><div class="box">
+                    <div class="name">
+                        <h6>
+                          Pancakes
+                        </h6>
+                    </div>
+                    <div class="img-box">
+                    <img style="  width: 240px;
+          height: 130px;"
+                        src="https://cdn.pixabay.com/photo/2017/01/16/17/42/pancake-1984712_1280.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            <span>90.00</span>
+                        </h5>
+                        <a onclick="tbuy(15)">
                             Buy
                         </a>
                     </div>

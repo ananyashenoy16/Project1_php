@@ -55,6 +55,52 @@ function Total(){
     var t = document.getElementById("total");
     t.value = total ;
 }
+
+var tarr = Create2DArray(60,60);
+tarr[0][0]="Smeals";
+tarr[0][1]=70;
+tarr[1][0]="Nmeals";
+tarr[1][1]=70;
+tarr[2][0]="Crice";
+tarr[2][1]=40;
+tarr[3][0]="Biryani";
+tarr[3][1]=50;
+tarr[4][0]="Frice";
+tarr[4][1]=40;
+tarr[5][0]="CChicken";
+tarr[5][1]=70;
+tarr[6][0]="Pcurry";
+tarr[6][1]=90;
+tarr[7][0]="cbiryani";
+tarr[7][1]=90;
+tarr[8][0]="Rchicken";
+tarr[8][1]=60;
+tarr[9][0]="Cmeals";
+tarr[9][1]=70;
+tarr[10][0]="Jalebi";
+tarr[10][1]=70;
+tarr[11][0]="Dhoklas";
+tarr[11][1]=30;
+tarr[12][0]="Rasgulla";
+tarr[12][1]=20;
+tarr[13][0]="cookies";
+tarr[13][1]=40;
+tarr[14][0]="cupcake";
+tarr[14][1]=50;
+tarr[15][0]="Pancake";
+tarr[15][1]=40;
+
+var total=0;
+function tbuy(i){
+  var name = tarr[i][0];
+  var price = tarr[i][1];
+  var x = document.getElementById("bill");
+  var y = document.getElementById("bil");
+
+  x.value+=name+"-";
+  y.value+=price +"+";
+  total += price;
+}
 // function buy(i){
 //     var name = arr[i][0];
 //     var price = arr[i][1];
