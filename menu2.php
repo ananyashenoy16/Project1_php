@@ -113,7 +113,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>100.00</span>
                         </h5>
                         <a onclick="tbuy(1)">
                             Buy
@@ -135,7 +135,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>40.00</span>
                         </h5>
                         <a onclick="tbuy(2)">
                             Buy
@@ -177,7 +177,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>70.00</span>
+                            <span>50.00</span>
                         </h5>
                         <a onclick="tbuy(4)">
                             Buy
@@ -185,7 +185,7 @@ if(!isset($_SESSION['username'])){
                     </div></div>
                 </div> 
               
-                <div class="filterDiv veg">
+                <!-- <div class="filterDiv veg">
                         <div class="box">
                     <div class="name">
                         <h6>
@@ -205,7 +205,7 @@ if(!isset($_SESSION['username'])){
                             Buy
                         </a>
                     </div></div>
-                </div> 
+                </div>  -->
                 <!-- -------------- non-veg-------------------- -->
                 <div class="filterDiv non">
                         <div class="box">
@@ -219,7 +219,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>30.00</span>
+                            <span>80.00</span>
                         </h5>
                         <a onclick="tbuy(5)">
                             Buy
@@ -240,7 +240,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>90.00</span>
+                            <span>190.00</span>
                         </h5>
                         <a onclick="tbuy(6)">
                             Buy
@@ -282,7 +282,7 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div class="detail-box">
                         <h5>
-                            <span>20.00</span>
+                            <span>60.00</span>
                         </h5>
                         <a onclick="tbuy(8)" >
                             Buy
