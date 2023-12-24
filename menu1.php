@@ -77,7 +77,7 @@ if(!isset($_SESSION['username'])){
             <h2>Special Discount</h2>
             <h5>Monthly membership is just @4099.Join with us now and get 15% of for the next month!</h5>
             <input type="email" placeholder="email">
-            <button class="join">Buy membership</button>
+          <button class="join"><a href="s-membership.html"style="color:#FFF">Buy membership</a> </button>
         </div>
         </div>
             <div class="heading_container">
