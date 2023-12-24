@@ -77,6 +77,14 @@
         signInButton.addEventListener('click', () => {
             main.classList.remove("right-panel-active");
         });
-    </script>
+       
+            const menuHamburger = document.querySelector(".menup")
+            const navLink = document.querySelector(".nav-link")
+        
+            menuHamburger.addEventListener('click',()=>{
+            navLink.classList.toggle('menum');
+            })
+        </script>
+   
 </body>
 </html>

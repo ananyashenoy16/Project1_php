@@ -246,14 +246,11 @@ if(!isset($_SESSION['username'])){
    
 </body>
 <script>
-        
-       
-        function openMenu(){
-          var nav=document.getElementById("myul");
-          nav.style.right=200px;
-        }
-        function closemenu(){
-          nav.style.right=-200px;
-        }
-   </script>
+      const menuHamburger = document.querySelector(".menup")
+      const navLink = document.querySelector(".nav-link")
+  
+      menuHamburger.addEventListener('click',()=>{
+      navLink.classList.toggle('menum');
+      })
+  </script>
 </html>

@@ -53,15 +53,15 @@ if(!isset($_SESSION['username'])){
                     <i class="fa-solid fa-xmark close" style="color: #ffffff;" onclick=""></i>
                     <li class="cc" ><a href="student.php">HOME</a></li>
                     <li class="cc" ><a href="menu1.php">MENU</a></li>
+                    <li class="cc" ><a href="s-membership.html">MEMBERSHIP</a></li>
                     <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                    <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                     <a href="logout.php"> <button>LOG OUT</button></a>
                     </ul>
                 </div>
                 <img class="menup" src="images/Capturejk.PNG" alt="sushi">
             </nav>
         </header>
-      
+     
         <section class="price_section layout_padding">
           <center> <h1>Student's Menu</h1></center>
         
@@ -71,7 +71,15 @@ if(!isset($_SESSION['username'])){
                 <button class="menu_btn" onclick="filterSelection('lunch')">Meals</button>
                 <button class="menu_btn" onclick="filterSelection('snacks')">Snacks</button>
             </section>
-
+            <div class="popup">
+            <div class="popup-content">
+                <h3>X</h3>
+            <h2>Special Discount</h2>
+            <h5>Monthly membership is just @4099.Join with us now and get 15% of for the next month!</h5>
+            <input type="email" placeholder="email">
+            <button class="join">Buy membership</button>
+        </div>
+        </div>
             <div class="heading_container">
             </div>
             <div class="price_container">
@@ -461,20 +469,13 @@ if(!isset($_SESSION['username'])){
                 </div>
             </div>
         </section>
-
+     
         <footer>
             <section class="info_section ">
                 <div class="container">
                     <div class="info_container">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="info_logo">
-                                    <a href="">
-                                        <img src="images/dim.png" alt="">
-
-                                    </a>
-                                </div>
-                            </div>
+                           
                             <div class="col-md-3">
                                 <div class="info_contact">
                                     <a href="">
@@ -568,6 +569,17 @@ if(!isset($_SESSION['username'])){
         })
       
         // Update the filterSelection function to handle button clicks and change color
+
+        const popup=document.querySelector('.popup');
+      const x=document.querySelector('.popup h3');
+      window.addEventListener('load',()=>{
+        popup.classList.add('showPopup');
+        // popup.childNodes[1].classList.add('showPopup');
+      })
+      x.addEventListener('click',()=>{
+        popup.classList.remove('showPopup');
+         popup.childNodes[1].classList.remove('showPopup');
+      })
     </script>
     </script>
 </html>

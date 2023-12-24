@@ -28,7 +28,7 @@ if(!isset($_SESSION['username'])){
       
        
       <header>
-       
+        
         <div class="bg-img">
           <img src="https://cdn.pixabay.com/photo/2022/05/17/05/03/vegetable-gravy-7201669_1280.jpg"  class="we" alt="">
         </div>
@@ -40,8 +40,8 @@ if(!isset($_SESSION['username'])){
               <ul id="myul" >
                   <li class="cc" ><a href="student.php">HOME</a></li>
                   <li class="cc" ><a href="menu1.php">MENU</a></li>
+                  <li class="cc" ><a href="s-membership.html">MEMBERSHIP</a></li>
                   <li class="cc" ><a href="about1.html">ABOUT</a></li>
-                  <!-- <li class="cc" ><a href="ctact.html">CONTACT</a></li> -->
                   <a href="logout.php"> <button>LOG OUT</button></a>
               </ul>
           </div>
@@ -53,9 +53,9 @@ if(!isset($_SESSION['username'])){
     
     <div class="text-box">
           <h1>CAN</h1>
-          <h1 style="font-size:160px;">CAFE</h1>
+          <h1>CAFE</h1>
     </div>
- 
+
   </header>
  
       <div class="newbg">
@@ -73,13 +73,13 @@ if(!isset($_SESSION['username'])){
              
               <div class="col-md-6">
                 <div class="img-box">
-                  <img style="border-radius: 10px; width:470px;height:350px" src="https://cdn.pixabay.com/photo/2023/07/12/20/40/ai-generated-8123329_1280.png"  alt="">
+                  <img style="border-radius: 10px; width:455px;height:350px" src="https://cdn.pixabay.com/photo/2023/07/12/20/40/ai-generated-8123329_1280.png"  alt="">
                 </div>
               </div>
                <div class="col-md-6">
                 <div class="detail-box">
                  
-                  <h5 style="font-family: hedvig letters serif;font-size:40px;font-weight:550;">
+                  <h5 style="font-family: hedvig letters serif;font-size:2rem;font-weight:550;">
                   Welcome to Can Cafe, where every cup tells a story. Nestled in the heart of MANGALORE, our charming cafe invites you to embark on a journey of flavors and relaxation. 
                   </h5>
                 </div>
@@ -151,14 +151,7 @@ if(!isset($_SESSION['username'])){
           <div class="container">
             <div class="info_container">
               <div class="row">
-                <div class="col-md-3">
-                  <div class="info_logo">
-                    <a href="">
-                      <img src="images/dim.png" alt="">
-                      
-                    </a>
-                  </div>
-                </div>
+              
                 <div class="col-md-3">
                   <div class="info_contact">
                     <a href="">
@@ -249,14 +242,13 @@ if(!isset($_SESSION['username'])){
     
 </body>
 <script>
-        
-       
-        function openMenu(){
-          var nav=document.getElementById("myul");
-          nav.style.right=200px;
-        }
-        function closemenu(){
-          nav.style.right=-200px;
-        }
-   </script>
+      const menuHamburger = document.querySelector(".menup")
+      const navLink = document.querySelector(".nav-link")
+  
+      menuHamburger.addEventListener('click',()=>{
+      navLink.classList.toggle('menum');
+      
+      })
+  
+  </script>
 </html>

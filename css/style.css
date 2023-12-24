@@ -80,6 +80,7 @@ width: 530px;
  }
  .inpo p{
   font-size: 30px;
+  color: #fff;
  }
  .confi{
    margin-left: 1.5em;
@@ -103,6 +104,19 @@ button:hover{
   color: #000;
   border: 2px solid #000;
 }
+@media(max-width:900px){
+  .imga{
+    display: none;
+   
+   }
+   .khlass{
+    background-color: #000000;
+    color: #000000;
+    border-radius: 10%;
+    height: 20%;
+    width: 60%;
+  }
+}
 @media(max-width:500px){
   .imga{
    display: none;
@@ -113,19 +127,24 @@ button:hover{
     color: #000000;
     border-radius: 10%;
     height: 20%;
-    width: 50%;
+    width: 70%;
   }
 .inpo{
     height: 50%;
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 60%;
     position: relative;
-    
-    margin-left: 1.8em;
+    text-align: center;
+    margin:20px;
   }
+.inpo p{
+  font-size: 21px;
+  margin-bottom: 0;
+}
+
   .confi{
-    margin-left: 2.4em;
+    margin-left: 0.7rem;
   }}
 @media(max-width:500px){
   .d127_44 { 
@@ -206,6 +225,35 @@ position: relative;
 
 }
 @media(max-width:500px){
+  .text-box h1{
+    font-size: 80px;
+    line-height: 110px;
+  }
+  .text-box{
+    margin-left: 5%;
+  }
+  .navbar{
+    height: 80px;
+  }
+  .price_section .price_container .box1{
+    height: 250px;
+  }
+  .layout_padding{
+    padding: 10px 0;
+  }
+  .abt{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 150vh;
+    margin-top: 50px;
+  }
+  .mylogo{
+    margin-left: 0;
+    height: 300px;
+    width: 300px;
+  }
+  
   .bo { 
     visibility:hidden;
     width: 9px;
